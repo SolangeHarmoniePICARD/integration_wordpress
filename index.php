@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html <?php language_attributes(); ?>>
   <head>
-    <meta charset="utf-8">
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="author" lang="fr" content="Eddy MORLON, Thomas Gallusser">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StartupRR</title>
+    <title><?php bloginfo('name'); ?> &raquo; <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
     <link rel="stylesheet" href="progressBar.css">
     <title></title>
   </head>
   <body>
     <header id="header">
       <section id="logo" class="col-12 p-5">
-          <img src="img/header.png"/>
+          <img src="<?php bloginfo('template_directory'); ?>/img/header.png"/>
       </section>
     </header>
     <main>
@@ -21,7 +21,7 @@
       <section id="menu" class="bg-light">
         <nav class="container navbar navbar-expand-lg bg-transparent navbar-dark">
           <a href="#menu">
-            <img src="img/logo.png" alt="logo"/>
+            <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="logo"/>
           </a>
 
           <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,7 +45,7 @@
       <!-- What we offer -->
       <section id="offer" class="pt-5">
         <div class="text-center">
-          <h1 class="h3"><img src="img/doubleLines.png" class="hideSmall" /> <img src="img/arrow.png" /> <b>WHAT WE <span class="titleBlue">OFFER</span></b> <img src="img/arrow.png" class="rotate180" /> <img src="img/doubleLines.png" class="rotate180 hideSmall" /></h1>
+          <h1 class="h3"><img src="<?php bloginfo('template_directory'); ?>/img/doubleLines.png" class="hideSmall" /> <img src="<?php bloginfo('template_directory'); ?>/img/arrow.png" /> <b>WHAT WE <span class="titleBlue">OFFER</span></b> <img src="<?php bloginfo('template_directory'); ?>/img/arrow.png" class="rotate180" /> <img src="<?php bloginfo('template_directory'); ?>/img/doubleLines.png" class="rotate180 hideSmall" /></h1>
           <p class="txt-light-grey">We offer our customers the best services & solutions, this is our main services list</p>
         </div>
 
@@ -53,7 +53,7 @@
           <div class="row">
             <div class="col-12 col-md-4 text-center my-5">
               <div class="rounded-circle bg-dark-grey bg-icons d-inline-block">
-                <img src="img/icon_1.png">
+                <img src="<?php bloginfo('template_directory'); ?>/img/icon_1.png">
               </div>
               <p class="mt-4 txt-title-grey"><b>RESPONSIVE & MULTIPURPOSE</b></p>
               <p class="text-center txt-interval-grey">Proin in magna a ipsum viverra scelerisq enec turp, Nunc vestibulum fringilla accumsan ornare quis.</p>
@@ -62,7 +62,7 @@
 
             <div class="col-12 col-md-4 text-center my-5">
               <div class="rounded-circle bg-dark-grey bg-icons d-inline-block">
-                <img src="img/icon_2.png">
+                <img src="<?php bloginfo('template_directory'); ?>/img/icon_2.png">
               </div>
               <p class="mt-4 txt-title-grey"><b>EASY CUSTOMIZATION</b></p>
               <p class="text-center txt-interval-grey">Proin in magna a ipsum viverra scelerisq enec turp, Nunc vestibulum fringilla accumsan ornare quis.</p>
@@ -71,7 +71,7 @@
 
             <div class="col-12 col-md-4 text-center my-5">
               <div class="rounded-circle bg-dark-grey bg-icons d-inline-block">
-                <img src="img/icon_3.png">
+                <img src="<?php bloginfo('template_directory'); ?>/img/icon_3.png">
               </div>
               <p class="mt-4 txt-title-grey"><b>AWESOME FRIENDLY SUPPORT</b></p>
               <p class="text-center txt-interval-grey">Proin in magna a ipsum viverra scelerisq enec turp, Nunc vestibulum fringilla accumsan ornare quis.</p>
@@ -83,15 +83,15 @@
 
       <!-- Section icon_1 -->
       <div class="section-nul text-center position-relative mt-5">
-        <img class="position-absolute" src="img/s_bg_icon_1.png" />
-        <img class="position-absolute" src="img/s_icon_1.png" />
+        <img class="position-absolute" src="<?php bloginfo('template_directory'); ?>/img/s_bg_icon_1.png" />
+        <img class="position-absolute" src="<?php bloginfo('template_directory'); ?>/img/s_icon_1.png" />
       </div>
 
       <!-- Amazing features -->
       <section id="feature" class="bg-dark-grey">
         <div class="container">
           <div class="text-center text-light py-5">
-            <h1 class="h3"><img src="img/arrow.png" /> <b>AMAZING <span class="titleBlue">FEATURES</span></b> <img src="img/arrow.png" class="rotate180" /></h1>
+            <h1 class="h3"><img src="<?php bloginfo('template_directory'); ?>/img/arrow.png" /> <b>AMAZING <span class="titleBlue">FEATURES</span></b> <img src="<?php bloginfo('template_directory'); ?>/img/arrow.png" class="rotate180" /></h1>
               <p class="txt-title-grey">With unlimited features that we offer, we promise it's possible to make eveything that was impossible for you !</p>
             </div>
 
@@ -101,7 +101,7 @@
                   <div class="col-12 col-xl-12 col-md-4">
                     <div class="row">
                       <div class="col-2 px-0 text-center">
-                        <img src="img/icon_g_1.png" />
+                        <img src="<?php bloginfo('template_directory'); ?>/img/icon_g_1.png" />
                       </div>
                       <div class="col-10">
                         <p class="font-weight-bold mb-0 text-white">RESPONSIVE & MULTIPURPOSE</p>
@@ -113,7 +113,7 @@
                   <div class="col-12 col-xl-12 col-md-4 m-top">
                     <div class="row">
                       <div class="col-2 px-0 text-center">
-                        <img src="img/icon_g_2.png" />
+                        <img src="<?php bloginfo('template_directory'); ?>/img/icon_g_2.png" />
                       </div>
                       <div class="col-10">
                         <p class="font-weight-bold mb-0 text-white">EASY CUSTOMIZATION</p>
@@ -125,7 +125,7 @@
                   <div class="col-12 col-xl-12 col-md-4 m-top">
                     <div class="row">
                       <div class="col-2 px-0 text-center">
-                        <img src="img/icon_g_3.png" />
+                        <img src="<?php bloginfo('template_directory'); ?>/img/icon_g_3.png" />
                       </div>
                       <div class="col-10">
                         <p class="font-weight-bold mb-0 text-white">UNLIMITED FEATURES</p>
@@ -137,7 +137,7 @@
               </div>
 
               <div class="col-8 hideSmall">
-                <img  src="img/ecran.png" />
+                <img  src="<?php bloginfo('template_directory'); ?>/img/ecran.png" />
               </div>
             </div>
           </div>
@@ -150,9 +150,9 @@
             <div class="col-12 col-sm-6 col-md-4 px-4 my-4" onmouseenter="overFeature(this)" onmouseleave="leaveFeature(this)">
               <div class="row">
                 <div class="col-2 px-0 text-center img-element">
-                  <img class="mt-4" src="img/bg_feature_2.png" />
-                  <img class="img_feature_1" src="img/bg_feature_1.png" />
-                  <img class="logo_feature" src="img/icon_1.png" />
+                  <img class="mt-4" src="<?php bloginfo('template_directory'); ?>/img/bg_feature_2.png" />
+                  <img class="img_feature_1" src="<?php bloginfo('template_directory'); ?>/img/bg_feature_1.png" />
+                  <img class="logo_feature" src="<?php bloginfo('template_directory'); ?>/img/icon_1.png" />
                 </div>
                 <div class="col-10">
                   <p class="font-weight-bold mb-0 txt-title-grey">RESPONSIVE & MULTIPURPOSE</p>
@@ -165,9 +165,9 @@
             <div class="col-12 col-sm-6 col-md-4 px-4 my-4" onmouseenter="overFeature(this)" onmouseleave="leaveFeature(this)">
               <div class="row">
                 <div class="col-2 px-0 text-center img-element">
-                  <img class="mt-4" src="img/bg_feature_2.png" />
-                  <img class="img_feature_1" src="img/bg_feature_1.png" />
-                  <img class="logo_feature" src="img/icon_2.png" />
+                  <img class="mt-4" src="<?php bloginfo('template_directory'); ?>/img/bg_feature_2.png" />
+                  <img class="img_feature_1" src="<?php bloginfo('template_directory'); ?>/img/bg_feature_1.png" />
+                  <img class="logo_feature" src="<?php bloginfo('template_directory'); ?>/img/icon_2.png" />
                 </div>
                 <div class="col-10">
                   <p class="font-weight-bold mb-0 txt-title-grey">EASY CUSTOMIZATION</p>
@@ -180,9 +180,9 @@
             <div class="col-12 col-sm-6 col-md-4 px-4 my-4" onmouseenter="overFeature(this)" onmouseleave="leaveFeature(this)">
               <div class="row">
                 <div class="col-2 px-0 text-center img-element">
-                  <img class="mt-4" src="img/bg_feature_2.png" />
-                  <img class="img_feature_1" src="img/bg_feature_1.png" />
-                  <img class="logo_feature" src="img/icon_4.png" />
+                  <img class="mt-4" src="<?php bloginfo('template_directory'); ?>/img/bg_feature_2.png" />
+                  <img class="img_feature_1" src="<?php bloginfo('template_directory'); ?>/img/bg_feature_1.png" />
+                  <img class="logo_feature" src="<?php bloginfo('template_directory'); ?>/img/icon_4.png" />
                 </div>
                 <div class="col-10">
                   <p class="font-weight-bold mb-0 txt-title-grey">UNLIMITED FEATURES</p>
@@ -195,9 +195,9 @@
             <div class="col-12 col-sm-6 col-md-4 px-3 my-4" onmouseenter="overFeature(this)" onmouseleave="leaveFeature(this)">
               <div class="row">
                 <div class="col-2 px-0 text-center img-element">
-                  <img class="mt-4" src="img/bg_feature_2.png" />
-                  <img class="img_feature_1" src="img/bg_feature_1.png" />
-                  <img class="logo_feature" src="img/icon_5.png" />
+                  <img class="mt-4" src="<?php bloginfo('template_directory'); ?>/img/bg_feature_2.png" />
+                  <img class="img_feature_1" src="<?php bloginfo('template_directory'); ?>/img/bg_feature_1.png" />
+                  <img class="logo_feature" src="<?php bloginfo('template_directory'); ?>/img/icon_5.png" />
                 </div>
                 <div class="col-10">
                   <p class="font-weight-bold mb-0 txt-title-grey">CLEAN & MODULAR CODING</p>
@@ -210,9 +210,9 @@
             <div class="col-12 col-sm-6 col-md-4 px-4 my-4" onmouseenter="overFeature(this)" onmouseleave="leaveFeature(this)">
               <div class="row">
                 <div class="col-2 px-0 text-center img-element">
-                  <img class="mt-4" src="img/bg_feature_2.png" />
-                  <img class="img_feature_1" src="img/bg_feature_1.png" />
-                  <img class="logo_feature" src="img/icon_6.png" />
+                  <img class="mt-4" src="<?php bloginfo('template_directory'); ?>/img/bg_feature_2.png" />
+                  <img class="img_feature_1" src="<?php bloginfo('template_directory'); ?>/img/bg_feature_1.png" />
+                  <img class="logo_feature" src="<?php bloginfo('template_directory'); ?>/img/icon_6.png" />
                 </div>
                 <div class="col-10">
                   <p class="font-weight-bold mb-0 txt-title-grey">THE BEST E-COMMERCE SOLUTIONS</p>
@@ -225,9 +225,9 @@
             <div class="col-12 col-sm-6 col-md-4 px-4 my-4" onmouseenter="overFeature(this)" onmouseleave="leaveFeature(this)">
               <div class="row">
                 <div class="col-2 px-0 text-center img-element">
-                  <img class="mt-4" src="img/bg_feature_2.png" />
-                  <img class="img_feature_1" src="img/bg_feature_1.png" />
-                  <img class="logo_feature" src="img/icon_3.png" />
+                  <img class="mt-4" src="<?php bloginfo('template_directory'); ?>/img/bg_feature_2.png" />
+                  <img class="img_feature_1" src="<?php bloginfo('template_directory'); ?>/img/bg_feature_1.png" />
+                  <img class="logo_feature" src="<?php bloginfo('template_directory'); ?>/img/icon_3.png" />
                 </div>
                 <div class="col-10">
                   <p class="font-weight-bold mb-0 txt-title-grey">AWESOME FRIENDLY SUPPORT</p>
@@ -242,14 +242,14 @@
 
       <!-- Section icon_2 -->
       <div class="section-nul text-center position-relative mt-4">
-        <img class="position-absolute" src="img/s_bg_icon_1.png" />
-        <img class="position-absolute" src="img/s_icon_2.png" />
+        <img class="position-absolute" src="<?php bloginfo('template_directory'); ?>/img/s_bg_icon_1.png" />
+        <img class="position-absolute" src="<?php bloginfo('template_directory'); ?>/img/s_icon_2.png" />
       </div>
 
       <!-- Skills -->
       <section id="skill" class="bg-dark-grey">
         <div class="text-center pt-5">
-          <h1 class="h3 text-light"><img src="img/arrow.png" /> <b>OUR POWERFUL <span class="titleBlue">SKILLS</span></b> <img src="img/arrow.png" class="rotate180" /></h1>
+          <h1 class="h3 text-light"><img src="<?php bloginfo('template_directory'); ?>/img/arrow.png" /> <b>OUR POWERFUL <span class="titleBlue">SKILLS</span></b> <img src="<?php bloginfo('template_directory'); ?>/img/arrow.png" class="rotate180" /></h1>
             <p class="txt-title-grey">With unlimited features that we offer, we promise it's possible to make eveything that was impossible for you !</p>
           </div>
 
@@ -357,7 +357,7 @@
       <!-- Samples -->
       <section id="sample">
         <div class="text-center py-5 col-12">
-          <p class="h3"><img src="img/doubleLines.png" class="hideSmall" /> <img src="img/arrow.png" /> <b>SAMPLE <span class="titleBlue">WORKS</span></b> <img src="img/arrow.png" class="rotate180" /> <img src="img/doubleLines.png" class="rotate180 hideSmall" /></p>
+          <p class="h3"><img src="<?php bloginfo('template_directory'); ?>/img/doubleLines.png" class="hideSmall" /> <img src="<?php bloginfo('template_directory'); ?>/img/arrow.png" /> <b>SAMPLE <span class="titleBlue">WORKS</span></b> <img src="<?php bloginfo('template_directory'); ?>/img/arrow.png" class="rotate180" /> <img src="<?php bloginfo('template_directory'); ?>/img/doubleLines.png" class="rotate180 hideSmall" /></p>
             <p class="txt-light-grey">Let's take a loot at some of the best of our works here, we love them and hope you too</p>
                 <div class="container-fluid">
                  <div class="row">
@@ -367,13 +367,13 @@
                       <div class="row iconsPortf">
                         <div class="pos test">
                           <a href="#sample">
-                            <img src="img/backicon.png">
+                            <img src="<?php bloginfo('template_directory'); ?>/img/backicon.png">
                             <div class="centered fas fa-link"></div>
                           </a>
                         </div>
                         <div class="pos search">
                           <a href="#sample">
-                            <img src="img/backicon.png">
+                            <img src="<?php bloginfo('template_directory'); ?>/img/backicon.png">
                             <div class="centered fas fa-search"></div>
                           </a>
                         </div>
@@ -392,13 +392,13 @@
                       <div class="row iconsPortf">
                         <div class="pos test">
                           <a href="#sample">
-                            <img src="img/backicon.png">
+                            <img src="<?php bloginfo('template_directory'); ?>/img/backicon.png">
                             <div class="centered fas fa-link"></div>
                           </a>
                         </div>
                         <div class="pos search">
                           <a href="#sample">
-                            <img src="img/backicon.png">
+                            <img src="<?php bloginfo('template_directory'); ?>/img/backicon.png">
                             <div class="centered fas fa-search"></div>
                           </a>
                         </div>
@@ -417,13 +417,13 @@
                       <div class="row iconsPortf">
                         <div class="pos test">
                           <a href="#sample">
-                            <img src="img/backicon.png">
+                            <img src="<?php bloginfo('template_directory'); ?>/img/backicon.png">
                             <div class="centered fas fa-link"></div>
                           </a>
                         </div>
                         <div class="pos search">
                           <a href="#sample">
-                            <img src="img/backicon.png">
+                            <img src="<?php bloginfo('template_directory'); ?>/img/backicon.png">
                             <div class="centered fas fa-search"></div>
                           </a>
                         </div>
@@ -442,13 +442,13 @@
                       <div class="row iconsPortf">
                         <div class="pos test">
                           <a href="#sample">
-                            <img src="img/backicon.png">
+                            <img src="<?php bloginfo('template_directory'); ?>/img/backicon.png">
                             <div class="centered fas fa-link"></div>
                           </a>
                         </div>
                         <div class="pos search">
                           <a href="#sample">
-                            <img src="img/backicon.png">
+                            <img src="<?php bloginfo('template_directory'); ?>/img/backicon.png">
                             <div class="centered fas fa-search"></div>
                           </a>
                         </div>
@@ -467,13 +467,13 @@
                       <div class="row iconsPortf">
                         <div class="pos test">
                           <a href="#sample">
-                            <img src="img/backicon.png">
+                            <img src="<?php bloginfo('template_directory'); ?>/img/backicon.png">
                             <div class="centered fas fa-link"></div>
                           </a>
                         </div>
                         <div class="pos search">
                           <a href="#sample">
-                            <img src="img/backicon.png">
+                            <img src="<?php bloginfo('template_directory'); ?>/img/backicon.png">
                             <div class="centered fas fa-search"></div>
                           </a>
                         </div>
@@ -492,13 +492,13 @@
                       <div class="row iconsPortf">
                         <div class="pos test">
                           <a href="#sample">
-                            <img src="img/backicon.png">
+                            <img src="<?php bloginfo('template_directory'); ?>/img/backicon.png">
                             <div class="centered fas fa-link"></div>
                           </a>
                         </div>
                         <div class="pos search">
                           <a href="#sample">
-                            <img src="img/backicon.png">
+                            <img src="<?php bloginfo('template_directory'); ?>/img/backicon.png">
                             <div class="centered fas fa-search"></div>
                           </a>
                         </div>
@@ -517,13 +517,13 @@
                       <div class="row iconsPortf">
                         <div class="pos test">
                           <a href="#sample">
-                            <img src="img/backicon.png">
+                            <img src="<?php bloginfo('template_directory'); ?>/img/backicon.png">
                             <div class="centered fas fa-link"></div>
                           </a>
                         </div>
                         <div class="pos search">
                           <a href="#sample">
-                            <img src="img/backicon.png">
+                            <img src="<?php bloginfo('template_directory'); ?>/img/backicon.png">
                             <div class="centered fas fa-search"></div>
                           </a>
                         </div>
@@ -542,13 +542,13 @@
                       <div class="row iconsPortf">
                         <div class="pos test">
                           <a href="#sample">
-                            <img src="img/backicon.png">
+                            <img src="<?php bloginfo('template_directory'); ?>/img/backicon.png">
                             <div class="centered fas fa-link"></div>
                           </a>
                         </div>
                         <div class="pos search">
                           <a href="#sample">
-                            <img src="img/backicon.png">
+                            <img src="<?php bloginfo('template_directory'); ?>/img/backicon.png">
                             <div class="centered fas fa-search"></div>
                           </a>
                         </div>
@@ -567,13 +567,13 @@
                       <div class="row iconsPortf">
                         <div class="pos test">
                           <a href="#sample">
-                            <img src="img/backicon.png">
+                            <img src="<?php bloginfo('template_directory'); ?>/img/backicon.png">
                             <div class="centered fas fa-link"></div>
                           </a>
                         </div>
                         <div class="pos search">
                           <a href="#sample">
-                            <img src="img/backicon.png">
+                            <img src="<?php bloginfo('template_directory'); ?>/img/backicon.png">
                             <div class="centered fas fa-search"></div>
                           </a>
                         </div>
@@ -592,13 +592,13 @@
                       <div class="row iconsPortf">
                         <div class="pos test">
                           <a href="#sample">
-                            <img src="img/backicon.png">
+                            <img src="<?php bloginfo('template_directory'); ?>/img/backicon.png">
                             <div class="centered fas fa-link"></div>
                           </a>
                         </div>
                         <div class="pos search">
                           <a href="#sample">
-                            <img src="img/backicon.png">
+                            <img src="<?php bloginfo('template_directory'); ?>/img/backicon.png">
                             <div class="centered fas fa-search"></div>
                           </a>
                         </div>
@@ -617,13 +617,13 @@
                       <div class="row iconsPortf">
                         <div class="pos test">
                           <a href="#sample">
-                            <img src="img/backicon.png">
+                            <img src="<?php bloginfo('template_directory'); ?>/img/backicon.png">
                             <div class="centered fas fa-link"></div>
                           </a>
                         </div>
                         <div class="pos search">
                           <a href="#sample">
-                            <img src="img/backicon.png">
+                            <img src="<?php bloginfo('template_directory'); ?>/img/backicon.png">
                             <div class="centered fas fa-search"></div>
                           </a>
                         </div>
@@ -642,13 +642,13 @@
                       <div class="row iconsPortf">
                         <div class="pos test">
                           <a href="#sample">
-                            <img src="img/backicon.png">
+                            <img src="<?php bloginfo('template_directory'); ?>/img/backicon.png">
                             <div class="centered fas fa-link"></div>
                           </a>
                         </div>
                         <div class="pos search">
                           <a href="#sample">
-                            <img src="img/backicon.png">
+                            <img src="<?php bloginfo('template_directory'); ?>/img/backicon.png">
                             <div class="centered fas fa-search"></div>
                           </a>
                         </div>
@@ -672,14 +672,14 @@
 
       <!-- Section icon_3 -->
       <div class="section-nul text-center position-relative">
-        <img class="position-absolute" src="img/s_bg_icon_1.png" />
-        <img class="position-absolute" src="img/s_icon_3.png" />
+        <img class="position-absolute" src="<?php bloginfo('template_directory'); ?>/img/s_bg_icon_1.png" />
+        <img class="position-absolute" src="<?php bloginfo('template_directory'); ?>/img/s_icon_3.png" />
       </div>
 
       <!-- Facts -->
       <section id="fact" class="bg-dark-grey">
         <div class="text-center pt-5">
-          <h1 class="h3 text-light"><img src="img/arrow.png" /> <b>COMPANY <span class="titleBlue">FACTS</span></b> <img src="img/arrow.png" class="rotate180" /></h1>
+          <h1 class="h3 text-light"><img src="<?php bloginfo('template_directory'); ?>/img/arrow.png" /> <b>COMPANY <span class="titleBlue">FACTS</span></b> <img src="<?php bloginfo('template_directory'); ?>/img/arrow.png" class="rotate180" /></h1>
           <p class="txt-title-grey">We do love to work and increase our counter numbers, this is what we've done till now</p>
         </div>
 
@@ -687,25 +687,25 @@
           <div class="row text-center txt-interval-grey">
             <div class="col-12 col-sm-6 col-lg-3 mb-5">
               <p class="mb-0"><span class="shape">&#9632;</span> <span data-value="218" class="largeTitle text-light countNumber">0</span> <span class="shape">&#9632;</span></p>
-              <p class="mb-2">—————&nbsp;&nbsp;&nbsp;<img src="img/facts_icon_1.png" />&nbsp;&nbsp;&nbsp;—————</p>
+              <p class="mb-2">—————&nbsp;&nbsp;&nbsp;<img src="<?php bloginfo('template_directory'); ?>/img/facts_icon_1.png" />&nbsp;&nbsp;&nbsp;—————</p>
               <p class="smallText font-weight-bold"><b>COMPLETED PROJECTS</b></p>
             </div>
 
             <div class="col-12 col-sm-6 col-lg-3 mb-3">
               <p class="mb-0"><span class="shape">&#9632;</span> <span data-value="360" class="largeTitle text-light countNumber">0</span> <span class="shape">&#9632;</span></p>
-              <p class="mb-2">—————&nbsp;&nbsp;&nbsp;<img src="img/facts_icon_2.png" />&nbsp;&nbsp;&nbsp;—————</p>
+              <p class="mb-2">—————&nbsp;&nbsp;&nbsp;<img src="<?php bloginfo('template_directory'); ?>/img/facts_icon_2.png" />&nbsp;&nbsp;&nbsp;—————</p>
               <p class="smallText font-weight-bold"><b>HOURS OR WORK / MONTH</b></p>
             </div>
 
             <div class="col-12 col-sm-6 col-lg-3 mb-3">
               <p class="mb-0"><span class="shape">&#9632;</span> <span data-value="135" class="largeTitle text-light countNumber">0</span> <span class="shape">&#9632;</span></p>
-              <p class="mb-2">—————&nbsp;&nbsp;&nbsp;<img src="img/facts_icon_1.png" />&nbsp;&nbsp;&nbsp;—————</p>
+              <p class="mb-2">—————&nbsp;&nbsp;&nbsp;<img src="<?php bloginfo('template_directory'); ?>/img/facts_icon_1.png" />&nbsp;&nbsp;&nbsp;—————</p>
               <p class="smallText font-weight-bold"><b>SOLVED TICKETS</b></p>
             </div>
 
             <div class="col-12 col-sm-6 col-lg-3 mb-3">
               <p class="mb-0"><span class="shape">&#9632;</span> <span data-value="174" class="largeTitle text-light countNumber">0</span> <span class="shape">&#9632;</span></p>
-              <p class="mb-2">—————&nbsp;&nbsp;&nbsp;<img src="img/facts_icon_1.png" />&nbsp;&nbsp;&nbsp;—————</p>
+              <p class="mb-2">—————&nbsp;&nbsp;&nbsp;<img src="<?php bloginfo('template_directory'); ?>/img/facts_icon_1.png" />&nbsp;&nbsp;&nbsp;—————</p>
               <p class="smallText font-weight-bold"><b>SATISFIED CLIENTS</b></p>
             </div>
           </div>
@@ -730,7 +730,7 @@
       <!-- Members -->
       <section id="member" class="pt-5">
         <div class="text-center">
-          <h1 class="h3"><img src="img/doubleLines.png" class="hideSmall" /> <img src="img/arrow.png" /> <b><span class="titleBlue">TEAM</span> MEMBERS</b> <img src="img/arrow.png" class="rotate180" /> <img src="img/doubleLines.png" class="rotate180 hideSmall" /></h1>
+          <h1 class="h3"><img src="<?php bloginfo('template_directory'); ?>/img/doubleLines.png" class="hideSmall" /> <img src="<?php bloginfo('template_directory'); ?>/img/arrow.png" /> <b><span class="titleBlue">TEAM</span> MEMBERS</b> <img src="<?php bloginfo('template_directory'); ?>/img/arrow.png" class="rotate180" /> <img src="<?php bloginfo('template_directory'); ?>/img/doubleLines.png" class="rotate180 hideSmall" /></h1>
           <p class="txt-title-grey">We're some creative people with powerful knowledge & awesome skills behind the scene bringing you the bests</p>
         </div>
 
@@ -738,7 +738,7 @@
           <div class="row text-center">
             <div class="col-12 col-sm-6 col-lg-3 mb-5">
               <div class="card p-0">
-                <img src="img/member_1.jpg" class="card-img-top">
+                <img src="<?php bloginfo('template_directory'); ?>/img/member_1.jpg" class="card-img-top">
                 <div class="text-center">
                   <button class="btn bg-light-blue text-light font-weight-bold mt-n3">ALEXIS SIMPSON</button>
                 </div>
@@ -751,7 +751,7 @@
 
             <div class="col-12 col-sm-6 col-lg-3 mb-5">
               <div class="card p-0">
-                <img src="img/member_1.jpg" class="card-img-top">
+                <img src="<?php bloginfo('template_directory'); ?>/img/member_1.jpg" class="card-img-top">
                 <div class="text-center">
                   <button class="btn bg-light-blue text-light font-weight-bold mt-n3">STEVEN COLE</button>
                 </div>
@@ -764,7 +764,7 @@
 
             <div class="col-12 col-sm-6 col-lg-3 mb-5">
               <div class="card p-0">
-                <img src="img/member_1.jpg" class="card-img-top">
+                <img src="<?php bloginfo('template_directory'); ?>/img/member_1.jpg" class="card-img-top">
                 <div class="text-center">
                   <button class="btn bg-light-blue text-light font-weight-bold mt-n3">FRANK PIENER</button>
                 </div>
@@ -777,7 +777,7 @@
 
             <div class="col-12 col-sm-6 col-lg-3 mb-5">
               <div class="card p-0">
-                <img src="img/member_1.jpg" class="card-img-top">
+                <img src="<?php bloginfo('template_directory'); ?>/img/member_1.jpg" class="card-img-top">
                 <div class="text-center">
                   <button class="btn bg-light-blue text-light font-weight-bold mt-n3">ASHLEY LENNON</button>
                 </div>
@@ -793,8 +793,8 @@
 
       <!-- Section icon_4 -->
       <div class="section-nul text-center position-relative mt-5">
-        <img class="position-absolute" src="img/s_bg_icon_2.png" />
-        <img class="position-absolute" src="img/s_icon_4.png" />
+        <img class="position-absolute" src="<?php bloginfo('template_directory'); ?>/img/s_bg_icon_2.png" />
+        <img class="position-absolute" src="<?php bloginfo('template_directory'); ?>/img/s_icon_4.png" />
       </div>
 
       <!-- Commentary -->
@@ -842,22 +842,22 @@
                 <div class="carousel-inner w-100" role="listbox">
                     <div class="carousel-item active">
                         <div class="col-lg-2 bg-grey-color p-4 m-2">
-                            <img class="img-fluid" src="img/logo_client_1.png">
+                            <img class="img-fluid" src="<?php bloginfo('template_directory'); ?>/img/logo_client_1.png">
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="col-lg-2 bg-grey-color p-4 m-2">
-                            <img class="img-fluid" src="img/logo_client_2.png">
+                            <img class="img-fluid" src="<?php bloginfo('template_directory'); ?>/img/logo_client_2.png">
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="col-lg-2 bg-grey-color p-4 m-2">
-                            <img class="img-fluid" src="img/logo_client_3.png">
+                            <img class="img-fluid" src="<?php bloginfo('template_directory'); ?>/img/logo_client_3.png">
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="col-lg-2 bg-grey-color p-4 m-2">
-                            <img class="img-fluid" src="img/logo_client_4.png">
+                            <img class="img-fluid" src="<?php bloginfo('template_directory'); ?>/img/logo_client_4.png">
                         </div>
                     </div>
                 </div>
@@ -873,7 +873,7 @@
       <section id="price">
         <div class="container">
             <div class="text-center pt-5">
-              <h1 class="h3"><img src="img/doubleLines.png" class="hideSmall" /> <img src="img/arrow.png" /> <b>REAL CHEAP <span class="titleBlue">PRICES</span></b> <img src="img/arrow.png" class="rotate180" /> <img src="img/doubleLines.png" class="rotate180 hideSmall" /></h1>
+              <h1 class="h3"><img src="<?php bloginfo('template_directory'); ?>/img/doubleLines.png" class="hideSmall" /> <img src="<?php bloginfo('template_directory'); ?>/img/arrow.png" /> <b>REAL CHEAP <span class="titleBlue">PRICES</span></b> <img src="<?php bloginfo('template_directory'); ?>/img/arrow.png" class="rotate180" /> <img src="<?php bloginfo('template_directory'); ?>/img/doubleLines.png" class="rotate180 hideSmall" /></h1>
                 <p class="txt-title-grey">We offer all our services in real low prices in comparaison with similar companies</p>
               </div>
 
@@ -919,7 +919,7 @@
                <div class="col-12 col-sm-6 col-lg-3 my-5">
                  <div class="border rounded">
                    <div class="text-center">
-                     <button type="button" class="btn bg-dark-grey text-light font-weight-bold mt-n3"><img src="img/star.png" /> ADVANCED PLAN <img src="img/star.png" /> </button>
+                     <button type="button" class="btn bg-dark-grey text-light font-weight-bold mt-n3"><img src="<?php bloginfo('template_directory'); ?>/img/star.png" /> ADVANCED PLAN <img src="<?php bloginfo('template_directory'); ?>/img/star.png" /> </button>
                    </div>
                    <p class="mt-2">$ <b class="priceSub">49.<span class="cents">99</span></b>Monthly</p>
                    <hr />
@@ -973,7 +973,7 @@
       <section id="media_link" class="bg-dark-grey">
         <div class="container-fluid">
           <div class="text-center">
-            <img id="logoMedia" src="img/logo.png" class="center-block" alt="logo"/>
+            <img id="logoMedia" src="<?php bloginfo('template_directory'); ?>/img/logo.png" class="center-block" alt="logo"/>
               <div id="iconMedia" class="row py-5 justify-content-center">
 
                 <div>
