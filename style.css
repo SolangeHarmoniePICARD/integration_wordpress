@@ -1,6 +1,6 @@
 /*
 Theme Name: Wp_Startuprr
-Author: Solange Harmonie PICARD
+Author: Eddy Morlon/Thomas Galluser/Romain Leroy/ Solange Harmonie PICARD
 Description: Template WordPress d'exemple
 Version:
 Tags: ?
@@ -330,12 +330,16 @@ input::placeholder, textarea::placeholder{
 #menu{
   border-bottom: 2px solid rgba(0,0,0,0.3);
   z-index:100;
+  display: flex;
 }
 
 #menu a{
   color: #606060;
 }
-
+#navbarNav{
+  display: flex;
+  justify-content: space-around;
+}
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(60,60,60, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }

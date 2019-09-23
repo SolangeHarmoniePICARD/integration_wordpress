@@ -20,17 +20,24 @@
           <div class="row py-3 collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
               <?php
-	               wp_nav_menu( array(
-		                 'theme_location' => 'nouveau-menu',
-		                  'container_class' => 'class-nouveau-menu' ) );
+                $args = array(
+                'menu_class' => 'nav navnav',
+                'menu' => '(your_menu_id)'
+                );
+	              wp_nav_menu($args, array(
+		              'theme_location' => 'nouveau-menu',
+		              'container_class' => 'class-nouveau-menu',
+                  'theme_location' => 'ul',
+                      'container' => 'div',
+                      'container_class' => 'collapse navbar-collapse',
+                      'container_id' => 'navbarCollapse',
+                      'menu_class' => 'nav-item',
+                      'echo' => true,
+                      'fallback_cb' => 'wp_page_menu',
+                      'items_wrap' => '<ul class="nav justify-content-end w-100 %2$s">%3$s</ul>',
+                      'depth' => 0 ) );
               ?>
-                <!--  <li class="nav-item"><a class="nav-link" href="#offer">OFFER</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#feature">FEATURES</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#skill">SKILL</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#member">MEMBERS</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#price">PRICE</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
-                  <li class="nav-item"><a class="nav-link fas fa-search fa-flip-horizontal" href="#" style="color:#00a99d;"></a></li>-->
+
             </ul>
           </div>
         </nav>
