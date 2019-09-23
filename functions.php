@@ -26,7 +26,41 @@ function startup_script() {
   wp_enqueue_script('main-script');
 }
 
-register_nav_menus( array(
-'menu-principal' => 'Menu principal') );
+// register_nav_menus( array(
+// 'menu-principal' => 'Menu principal') );
+
+function add_Main_Nav() {
+  register_nav_menu('header-menu',__( 'Header Menu' ));
+}
+add_action( 'init', 'add_Main_Nav' );
+
+function my_custom_init(){
+  register_post_type(
+    'picture',
+    array(
+      'label' => 'Pictures',
+      'labels' => array(
+        'name' => 'Pictures',
+        'singular_name' => 'Picture',
+        'all_items' => 'Toutes les images',
+        'add_new_item' => 'Ajouter une image',
+        'edit_item' => 'Éditer l\'image',
+        'new_item' => 'Nouvelle immage',
+        'view_item' => 'Voir l\'image',
+        'search_items' => 'Rechercher parmi les images',
+        'not_found' => 'Pas d\'image trouvée',
+        'not_found_in_trash'=> 'Pas d\'image dans la corbeille'
+        ),
+      'public' => true,
+      'capability_type' => 'post',
+      'supports' => array(
+        'title',
+        'thumbnail'
+      ),
+      'has_archive' => true
+    )
+  );
+}
+add_action('init', 'my_custom_init');
 
 add_theme_support( 'post-thumbnails' );
