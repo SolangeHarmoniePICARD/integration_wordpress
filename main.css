@@ -1,11 +1,4 @@
-/*
-Theme Name: Wp_Startuprr
-Author: Eddy Morlon/Thomas Galluser/Romain Leroy/ Solange Harmonie PICARD
-Description: Template WordPress d'exemple
-Version:
-Tags: ?
-*/
-/* html {
+html {
   --light-grey-txt-color: #bbbbbb;
   --interval-grey-txt-color: #484848;
   --bg-grey-color:#363636;
@@ -536,4 +529,4 @@ input::placeholder, textarea::placeholder{
   position: absolute;
   top: 0;
   left: 0;
-} */
+}
